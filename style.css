@@ -1,0 +1,304 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Navbar */
+  #header {
+    background: black;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .brand {
+    font-size: 1.8rem;
+    background: linear-gradient(45deg, #ff007f, #ff6a00, #ff8000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-list li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Welcome Section */
+ /* Welcome Section */
+#welcome {
+    background-image: url('https://res.cloudinary.com/dko49jfq3/image/upload/v1735314928/44c3683985b542d8ba6e1217a36ee20d_iveuq4.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    height: 100vh; /* Full screen height */
+  }
+  
+  #welcome h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  #welcome p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+  }
+  #welcome {
+    position: relative;
+    background-image: url('https://res.cloudinary.com/dko49jfq3/image/upload/v1735314928/44c3683985b542d8ba6e1217a36ee20d_iveuq4.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    height: 100vh; /* Full screen height */
+  }
+  
+  #welcome::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the transparency */
+    z-index: 1;
+  }
+  
+  #welcome h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2; /* Ensure the text is above the overlay */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds shadow to the text for better visibility */
+    padding: 0 20px;
+  }
+  
+  #welcome p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    position: relative;
+    z-index: 2; /* Ensure the text is above the overlay */
+    padding: 0 20px;
+  }
+  
+  @media (max-width: 768px) {
+    #welcome h1 {
+      font-size: 2.5rem; /* Smaller font size on smaller screens */
+    }
+  
+    #welcome p {
+      font-size: 1rem; /* Adjust paragraph size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #welcome h1 {
+      font-size: 2rem; /* Further reduce font size on very small screens */
+    }
+  
+    #welcome p {
+      font-size: 0.9rem; /* Further adjust paragraph size */
+    }
+  }
+  
+  
+  /* About Section */
+ /* About Section */
+#about {
+    padding: 100px 0;
+    background: #f4f4f4;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .about-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 40px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .about-content {
+    text-align: center;
+  }
+  
+  .about-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .about-content p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #ff6000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .cta:hover {
+    background: #ff3e00;
+  }
+  
+  
+  /* Projects Section */
+  .project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;  /* Ensures no overflow when scaling the image */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;  /* Makes the card feel interactive */
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;  /* Set a fixed height for the image */
+    object-fit: cover;  /* Ensure the image covers the area */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;  /* Smooth transition for scaling the image */
+}
+
+.project-card:hover {
+    transform: translateY(-10px);  /* Moves the entire card up by 10px on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /* Adds a deeper shadow on hover */
+}
+
+.project-card:hover img {
+    transform: scale(1.05);  /* Slightly enlarge the image */
+}
+
+.project-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.project-card a {
+    color: #ff6000;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+  /* Contact Section */
+  #contact {
+    padding: 50px 0;
+    background: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  .contact-details p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact-details a {
+    color: #ff6a00;
+    text-decoration: none;
+  }
+  
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  #footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  

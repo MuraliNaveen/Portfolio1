@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Navbar */
+  #header {
+    background: black;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .brand {
+    font-size: 1.8rem;
+    background: linear-gradient(45deg, #ff007f, #ff6a00, #ff8000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-list li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+  }
+  
+  #contact h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .contact-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .contact-item h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .contact-item p {
+    font-size: 1.1rem;
+  }
+  
+  .contact-item a {
+    color: #ff6000;
+    text-decoration: none;
+  }
+  
+  .contact-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .home-button-container {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .home-button {
+    padding: 12px 20px;
+    background-color: #ff6000;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .home-button:hover {
+    background-color: #e55c00;
+  }
+  
+  @media (max-width: 768px) {
+    #contact h1 {
+      font-size: 
+  
